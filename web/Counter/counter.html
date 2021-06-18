@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Workout CountDown</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes//overcast/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+    
+<body>
+    <div id="container">
+        <div id="time"><span id="actionMode">work!</span><span id="timevalue"></span>
+        <span id="setsLeft"></span>
+        </div>
+        <div id="inputs">
+            <label for="seconds">Seconds:</label><input class="numbers" id="seconds" name="seconds" title="seconds" type="number" value="0"><br><br><br>
+            <label for="sets">Sets:</label><input class="numbers" id="sets" name="sets" title="sets" type="number" value="0"><br><br><br>
+            <label for="break">Break:</label><input class="numbers" id="break" name="break" title="break" type="number" value="0">
+        </div>
+        
+        <div class="buttons">
+        <div id="button1"><ion-icon name="pause"></ion-icon></div>
+        <div id="button2"><ion-icon name="play"></ion-icon></div>
+        <div id="button3"><ion-icon name="reload"></ion-icon></div>
+        
+        </div>
+       
+    </div>
+    <audio id="ready">
+        <source src="audio/ready.mp3">
+        <source src="audio/ready.ogg">
+    </audio>
+    <audio id="ready2">
+        <source src="audio/ready.mp3">
+        <source src="audio/ready.ogg">
+    </audio>
+    <audio id="stop">
+        <source src="audio/stop.mp3">
+        <source src="audio/stop.ogg">
+    </audio>
+    <audio id="done">
+        <source src="audio/done.mp3">
+        <source src="audio/done.ogg">
+    </audio>
+    <audio id="go">
+        <source src="audio/go.mp3">
+        <source src="audio/go.ogg">
+    </audio>
+    
+    
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <script src="script.js">
+    </script>
+    
+</body>
+
+
+</html>
